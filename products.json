@@ -54,5 +54,12 @@
         "image": "tesla-roadster.jpg",
         "description": "Best sports car in the World",
         "price": 249999.99
+    },
+    {
+        "id": "9",
+        "title": "Dinosaur",
+        "image": "dinosaur.jpg",
+        "description": "Best dinosaur in 2019",
+        "price": "infinite"
     }
 ]

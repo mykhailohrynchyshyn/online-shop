@@ -1,9 +1,10 @@
-class ProductList {
+ class ProductList {
   constructor(productsUrl, renderContainer, cart) {
     this.cart = cart;
     fetch(productsUrl)
       .then(result => result.json())
       .then(products => {
+        products.sort( (a, b) => b.price - a.price );
         this.products = products;
         this.renderProducts(renderContainer, products);
         this.addEventListeners();
